@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 160px;
+    background-color: black;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://p4.wallpaperbetter.com/wallpaper/762/472/938/bridge-black-forest-forest-nature-hd-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: white;
+    margin: 8px;
+    padding: 8px;
+    width: 8rem;
+    text-align: center;
+    border-radius: 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav ul li:hover {
+    transform: scale(1.05);
+    transition: 120ms;
+}
+
+nav ul li:active {
+    transform: scale(1);
+    transition: 60ms;
+}
+
+.logo {
+    max-height: 150px;
+    margin-left: 4px;
+}
+
+@media (max-width: 660px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: inline-block;
+        background-color: white;
+        margin: 4px;
+        padding: 4px;
+        width: 5rem;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        font-size: small;
+    }
+    .logo {
+        height: 110px;
+        margin-top: 10px;
+    }
+}
