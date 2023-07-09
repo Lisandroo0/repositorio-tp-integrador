@@ -9,17 +9,32 @@ header {
     justify-content: space-between;
     align-items: center;
     min-height: 160px;
-    background-color: black;
+    background-color: #02152b;
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://p4.wallpaperbetter.com/wallpaper/762/472/938/bridge-black-forest-forest-nature-hd-wallpaper-preview.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: roboto;
+    background-color: #02253d;
+    color: white
 }
 nav ul {
     float: right;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 2.4em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.15em;
 }
 
 nav ul li {
@@ -87,4 +102,63 @@ nav ul li:active {
         height: 110px;
         margin-top: 10px;
     }
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://my-thai.org/wp-content/uploads/181219_10151002661421620_1985654398_n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#historia .container {
+    text-align: justify;
+    padding: 100px 12px;
+}
+
+#historia h2 {
+    text-align: center;
+}
+
+#tecnicas {
+    background-color: #02152b;
+    text-align: justify;
+}
+
+#tecnicas h3 {
+    text-align: center;
+}
+
+#tecnicas .container {
+    padding: 100px 12px;
+}
+
+#leyendas h3 {
+    text-align: center;
+}
+#leyendas .carta {
+
+}
+
+.carta:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.tapology.com/letterbox_images/150092/default/Saenchai.jpg?1606284356);
+}
+
+.carta:nth-child(2) {
+
+}
+
+.carta:nth-child(3) {
+
 }
