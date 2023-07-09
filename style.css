@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 160px;
+    min-height: 100px;
     background-color: #02152b;
 }
 
@@ -30,6 +30,9 @@ h2 {
 }
 
 h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
     font-size: 2em;
 }
 
@@ -40,14 +43,16 @@ p {
 nav ul li {
     display: inline-block;
     background-color: white;
-    margin: 8px;
-    padding: 8px;
-    width: 8rem;
+    margin: 2px;
+    padding: 6px;
+    width: 5rem;
     text-align: center;
     border-radius: 5px;
+    margin-right: 10px;
 }
 nav ul li a {
     text-decoration: none;
+    font-size: 0.8em;
     font-family: sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -65,43 +70,9 @@ nav ul li:active {
 }
 
 .logo {
-    max-height: 150px;
-    margin-left: 4px;
-}
-
-@media (max-width: 660px) {
-    header{
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 440px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        display: inline-block;
-        background-color: white;
-        margin: 4px;
-        padding: 4px;
-        width: 5rem;
-        text-align: center;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    nav ul li a {
-        text-decoration: none;
-        font-family: sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: black;
-        font-size: small;
-    }
-    .logo {
-        height: 110px;
-        margin-top: 10px;
-    }
+    max-height: 90px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .container {
@@ -125,6 +96,8 @@ nav ul li:active {
 #historia .container {
     text-align: justify;
     padding: 100px 12px;
+    background-color: #02152b;
+    max-width: none;
 }
 
 #historia h2 {
@@ -132,7 +105,6 @@ nav ul li:active {
 }
 
 #tecnicas {
-    background-color: #02152b;
     text-align: justify;
 }
 
@@ -144,21 +116,210 @@ nav ul li:active {
     padding: 100px 12px;
 }
 
-#leyendas h3 {
+#leyendas {
+    background-color: #02152b;
     text-align: center;
+    padding-bottom: 20px;
 }
-#leyendas .carta {
 
+#leyendas .carta {
+    background-position: center center;
+    background-size: cover;
+    text-align: justify;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#leyendas h3 {
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
 .carta:first-child {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.tapology.com/letterbox_images/150092/default/Saenchai.jpg?1606284356);
+    
 }
 
 .carta:nth-child(2) {
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/ex415m.jpg);
 }
 
 .carta:nth-child(3) {
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://blog.revgear.com/wp-content/uploads/2018/10/Dieselnoi-3-.jpg);
 }
+
+@media (max-width:384px) {
+    nav ul li {
+        display: inline-block;
+        background-color: white;
+        margin: 1px;
+        padding: 4px;
+        width: 4.5rem;
+        text-align: center;
+        border-radius: 5px;
+        margin-right: 10px;
+    }   
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 0.7em;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+ }
+}
+
+@media (min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    #hero h1{
+        font-size: 3em;
+    }
+
+    #historia .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #historia .texto {
+        width: 80%;
+        text-align: initial;
+        padding: 0px 20px;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #historia .img-container {
+        background-image: url(images/—Pngtree—thailand\ wavy\ grunge\ flag\ png_6632919.png);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        width: 300px;
+    }
+
+    #tecnicas .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #tecnicas .texto {
+        width: 80%;
+        text-align: initial;
+        padding: 0px 20px;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #tecnicas h2 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #tecnicas h3 {
+        text-align: initial;
+    }
+
+    #tecnicas .img-puño {
+        background-image: url(images/muay-thai-nose-shot.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        width: 400px;
+    }
+
+    #tecnicas .container-codo {
+        display: flex;
+        padding: 100px 12px;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #02152b;
+    }
+    #tecnicas .texto {
+        width: 80%;
+        text-align: initial;
+        padding: 0px 20px;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #tecnicas h3 {
+        text-align: initial;
+    }
+
+    #tecnicas .img-codo {
+        background-image: url(images/Muay-Thai-Elbow-Techniques-.jpeg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        width: 400px;
+        }
+
+    #tecnicas .container-rodilla {
+        display: flex;
+        padding: 100px 12px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #tecnicas .texto {
+        width: 80%;
+        text-align: initial;
+        padding: 0px 20px;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #tecnicas h3 {
+        text-align: initial;
+    }
+
+    #tecnicas .img-rodilla {
+        background-image: url(images/onefc-muay-thai-clinch-knee.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        width: 400px;
+        }
+
+#tecnicas .container-piernas {
+        display: flex;
+        padding: 100px 12px;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #02152b;
+    }
+    #tecnicas .texto {
+        width: 80%;
+        text-align: initial;
+        padding: 0px 20px;
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #tecnicas h3 {
+        text-align: initial;
+    }
+
+    #tecnicas .img-piernas {
+        background-image: url(images/Muay-Thai-Kicks-1-1024x1024.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        width: 400px;
+    }
+}    
